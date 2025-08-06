@@ -88,8 +88,8 @@
 				<h5>
 					<?php
 						echo $igreja->rua();
-						echo ', N&ordm; '.$igreja->numero();
-						echo '-'.$cidCad[$igreja->cidade()]['cidade'];
+						echo ', '.$igreja->numero();
+						echo ' - '.$cidCad[$igreja->cidade()]['cidade'];
 						echo '-'.$cidCad[$igreja->cidade()]['uf'].'<br/>CEP: '.$igreja->cep().'';
 						if ($igreja->fone() != null) {
 							echo ' &bull; Fone: '.$igreja->fone().'<br/>';
