@@ -79,12 +79,13 @@ for ($i = 0; $i < 3; $i++) {
 		}
 	}
 }else {
+	$totalContr = empty($totalContr)?0:$totalContr;
 for ($i = 0; $i < 13; $i++) {
 	//verifica se há algum campo algum campo com valor
 		$campo = 'oferta'.$i;
 		$vlrPost = strtr( str_replace(array('.'),array(''),$_POST["$campo"]), ',.','.,' );
-		$valorBR = number_format($vlrPost, 2, ',', ' ');
-		$totalContr += $vlrPost;
+		$valorBR = number_format(empty($vlrPost)?0:$vlrPost, 2, ',', ' ');
+		$totalContr += empty($vlrPost)?0:$vlrPost;
 
 		switch ($i) {
 			case '0':

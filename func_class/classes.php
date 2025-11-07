@@ -429,8 +429,8 @@ class insert {
 	}
 
 	public function inserir() {
-		var_dump($this->getCampos());
-		echo '<br /><br />';
+		// var_dump($this->getCampos());
+		// echo '<br /><br />';
 		// $cod = mb_detect_encoding( $this->getCampos(), "auto" );
 		// echo $cod ;
 		// echo '<br /><br />';
