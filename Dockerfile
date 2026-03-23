@@ -20,4 +20,6 @@ RUN echo "display_errors=Off" > /usr/local/etc/php/php.ini && \
 EXPOSE 8000
 
 # 6️⃣ Comando de start – o servidor PHP embutido escuta em 0.0.0.0:8000
-CMD ["php", "-S", "0.0.0.0:8000", "-t", "."]
+
+ENV PORT=8000
+CMD  ["php", "-S", "0.0.0.0:8000", "-t", "."]
